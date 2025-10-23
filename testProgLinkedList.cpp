@@ -62,7 +62,48 @@ int main()                                          //Line 4
         cout << *it << " ";                         //Line 36
     cout << endl;                                   //Line 37
 
+
+    //-----------------------------------------------------
+    //  Lab 5: Testing new member functions
+    //-----------------------------------------------------
+    cout << endl << "====== LAB 5 TESTS ======" << endl;
+
+    cout << "Original list1: ";
+    list1.print();
+    cout << endl;
+
+    cout << "Deleting smallest element..." << endl;
+    list1.deleteSmallest();
+    cout << "After deleteSmallest(): ";
+    list1.print();
+    cout << endl;
+
+    cout << "Enter a number to delete all its occurrences: ";
+    cin >> num;
+    list1.deleteAll(num);
+    cout << "After deleteAll(" << num << "): ";
+    list1.print();
+    cout << endl;
+
+    cout << "Enter a position k to display kth element: ";
+    cin >> num;
+    cout << "The " << num << "th element is: "
+         << list1.getKthElement(num) << endl;
+
+    cout << "Enter a position k to delete kth element: ";
+    cin >> num;
+    list1.deleteKthElement(num);
+    cout << "After deleteKthElement(" << num << "): ";
+    list1.print();
+    cout << endl;
+
+    cout << "Rotating list..." << endl;
+    list1.rotate();
+    cout << "After rotate(): ";
+    list1.print();
+    cout << endl;
+    //-----------------------------------------------------
+
     //system("pause");
     return 0;                                       //Line 38
 }                                                   //Line 39
-
