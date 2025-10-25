@@ -314,8 +314,7 @@ linkedListType<Type>::linkedListType(const linkedListType<Type>& otherList)
 }
 
 template <class Type>
-const linkedListType<Type>& linkedListType<Type>::operator=
-(const linkedListType<Type>& otherList)
+const linkedListType<Type>& linkedListType<Type>::operator=(const linkedListType<Type>& otherList)
 {
     if (this != &otherList)
         copyList(otherList);
